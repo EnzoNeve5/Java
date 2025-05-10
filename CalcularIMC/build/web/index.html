@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Índice de Massa Corporal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    </head>
+    <body>
+        <div id="pag">
+            <h1>Calcular IMC</h1>
+            <div id="div1">
+                <p>IMC é o Índice de Massa Corporal.</p>
+                <p>Calcula-se assim: IMC = peso / (altura * altura).</p>
+                <form action="index1_resp.jsp" method="get" target="result">
+                    Peso:   <input type="text" name="peso" maxlength="5"><br>
+                    Altura: <input type="text" name="altura" maxlength="5"><br>
+                    <input type="submit" name="enviar" value="Calcular IMC">
+                </form>
+            </div>
+            <div id="div2">
+                <iframe name="result" width="400" height="200" frameborder="0">
+                </iframe>
+            </div>
+        </div>
+    </body>
+</html>
